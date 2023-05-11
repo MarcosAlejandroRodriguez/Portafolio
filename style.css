@@ -41,14 +41,11 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
-    display: flex;
-}
 
 
 
 .menu__list {
-    list-style: none;
+    list-style:square;
     margin: 0;
     padding: 0;
     
