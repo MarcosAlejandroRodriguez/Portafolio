@@ -62,34 +62,44 @@ https://en.bem.info/methodology/quick-start/*/
   
 
 /*Sección Title*/
-
-.section.title {
-    display: inline-flex;
-    text-align: center;
-}
-
-
-.title__profile {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin: auto;
-}
-
-.title__network{
+.title__div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title__profile {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 10px; /* Añade un margen entre la imagen y el texto */
+  }
+  
+  .title__container {
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible */
+  }
+  
+  .title__bio {
+    margin-top: 0; /* Elimina el margen superior del título */
+  }
+  
+  .title__network {
+    display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
-}
-
-.title__network__item{
-    display: inline;
-}
-
-.title__network__item a {
-    display: inline-block;
-    padding: 1em;
-}
+  }
+  
+  .title__network__item {
+    margin-right: 10px; /* Añade un margen entre los elementos de la lista */
+  }
+  
+  .title__network__item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .title__network__item img {
+    margin-left: 5px; /* Añade un margen entre el texto y la flecha */
+  }
+  
 /*Sección About*/
 
 section.about{
