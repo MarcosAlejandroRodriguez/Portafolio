@@ -44,12 +44,23 @@ https://en.bem.info/methodology/quick-start/*/
 
 
 
+
+
 .menu__list {
-    list-style:square;
-    margin: 0;
-    padding: 0;
-    
-}
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    list-style: none; /* Elimina los estilos de lista por defecto */
+  }
+  
+  .menu__list__item {
+    margin: 0 10px; /* Añade un margen entre los elementos del menú */
+  }
+  
+  .menu__list__item a {
+    text-decoration: none; /* Elimina la decoración de enlace por defecto */
+  }
+  
+
 /*Sección Title*/
 
 .section.title {
