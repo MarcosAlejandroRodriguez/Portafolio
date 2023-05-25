@@ -39,26 +39,60 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+/*Sección Menu header*/
+
+.menu__header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu__header img {
+    margin-right: 10px; /* Añade un margen entre la imagen y el título */
+  }
+  
+  .menu__title {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+  }
+  
+  .menu__title,
+  .menu__header img {
+    display: inline-block; /* Alinea la imagen y el título en línea */
+  }
+  
+
 /*Sección Menu*/
 
 
-
-
-
-
-.menu__list {
+.menu {
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    list-style: none; /* Elimina los estilos de lista por defecto */
+    justify-content: flex-end; /* Alinea el contenido al extremo derecho */
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  .menu__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
   }
   
   .menu__list__item {
-    margin: 0 10px; /* Añade un margen entre los elementos del menú */
+    margin-right: 10px;
   }
   
   .menu__list__item a {
-    text-decoration: none; /* Elimina la decoración de enlace por defecto */
+    text-decoration: none;
+    color: black;
   }
+  
+  .menu__list__item__contato {
+    margin-left: 10px;
+  }
+  
+  .menu__list__item__contato a {
+    text-decoration: none;
+    color: black;
+  }
+  
   
 
 /*Sección Title*/
@@ -106,24 +140,137 @@ section.about{
 
 }
 
+/*seccion Skills*/
+
+.skills {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Establece una altura mínima para ocupar todo el espacio vertical */
+  }
+  
+  .skills__line {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centra los elementos horizontalmente dentro de la línea */
+    width: 90%; /* Ocupa el 90% del ancho del contenedor */
+    max-width: 800px; /* Establece un ancho máximo para evitar que las cajas se hagan demasiado grandes */
+    margin-top: 20px; /* Añade un margen superior entre las filas */
+  }
+  
+  .skills__box {
+    flex-basis: 45%; /* Establece el ancho base de las cajas */
+    margin: 10px; /* Añade un margen entre las cajas */
+    text-align: center; /* Centra el contenido dentro de las cajas */
+  }
+  
+  .skills__img {
+    margin-bottom: 10px; /* Añade un margen inferior a la imagen */
+  }
+  
+  .skills__name {
+    margin: 0; /* Elimina el margen superior e inferior del nombre de habilidad */
+  }
+  
+
 /*Sección Hobbies*/
 
-section.hobbies{
-    
-}
+.hobbies {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hobbies__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .hobbies__line {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 /* Experiencia Académica*/
 
-section.academic{
-
-}
-
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+  }
+  
+  .academic__courses__box {
+    flex-basis: 30%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .academic__courses__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .academic__courses__item__img {
+    margin-bottom: 10px;
+  }
+  
+  .academic__courses__item__title,
+  .academic__courses__item__subtitle {
+    margin: 0;
+  }
+  
 /* experiencia*/
 
-section.experience{
-
-}
-
+.experience {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+  }
+  
+  .experience__section__title {
+    text-align: center;
+  }
+  
+  .experience__box {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .experience__img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .experience__title,
+  .experience__text {
+    margin: 10px 0;
+  }
+  
+  .experience__description {
+    margin-top: 20px;
+  }
+  
+  .experience__repo,
+  .experience__demo {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
 /*Contacto*/
 
 section.formcontato{
