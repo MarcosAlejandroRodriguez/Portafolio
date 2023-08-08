@@ -1,274 +1,153 @@
-<!DOCTYPE html>
-<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Mi Portafolio</title>
-</head>
-<body>
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Rodriguez Marcos</h3>
-        </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contacto"></a></li>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>J<span>C</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a href="#"  class="active">Inicio</a></li>
+            <li><a href="#">Quien Soy</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
         </nav>
-    </section>
-
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
-            <div class="title__container">
-                <h2 class="title__bio">Rodriguez Marcos Alejandro </h2>
-                <h3 class="title__subsection">Estoy muy interesado en trabajar en el área de la tecnología porque siempre me ha apasionado y tengo muchas ganas de aprender y crecer en este campo. Aunque soy nuevo en esto, estoy dispuesto a poner todo mi empeño para adquirir nuevos conocimientos y habilidades, y contribuir en lo que pueda en cualquier proyecto o tarea que se me asigne. Estoy seguro de que mi actitud de aprendizaje constante, mi entusiasmo y mi capacidad para trabajar en equipo me permitirán tener éxito en este campo</h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/MarcosAlejandroRodriguez">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/rodriguez-marcos99sd/">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/enkii9ine/">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/rodriguez-marcos99sd/">Currículo <img src="assets\arrow.png"></a></li>
-                </ul>
-            </div>
+      </header>
+      <main class="main">
+        <div class="info-content">
+          <h1>I'm <span>John</span> Carter</h1>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis minima eveniet accusamus rem sint doloribus quia eligendi expedita optio, dolore quo ipsa atque. Expedita doloremque deleniti alias iste quia?</p>
+           <a download href="#"><button class="download-cv">Download CV</button></a>
         </div>
-    </section>
-
-    <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-        </div>
-    </section>
-
-    <!-- Sección de Skills -->
-    <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">Pythom</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name"> Patinaje</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar bajo</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Oir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ver séries</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cocinar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tomar fotos</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-        <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profissional</h2>
-        <div class="experiencie__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\decod_print.png">
-            <div class="experience__info"></div>
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\forca_print.png">
-            <div class="experience__info"></div>
-                <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\secretcode_print.png">
-            <div class="experience__info-container"></div>
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experience__box">
-            <img class="experience__img" src="assets\forca2_print.png">
-            <div class="experience__info-container"></div>
-            <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-        </div>
-        </div>  
-
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Rodriguez Marcos</p>
-                <p>2022</p>
-            </div>
-        </section>
+        <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/pexels-photo-1516680-removebg-preview_f7yxxl.png" alt="">
+      </main>
     </div>
- <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
-</body>
-</html>
+      <div class="about">
+        <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/about_grtker.png" alt="">
+        <div class="about-info">
+          <h2>About me</h2>
+          <div class="divider"></div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id cumque asperiores fugit, quis repudiandae accusamus quisquam modi numquam laudantium fugiat enim eum pariatur amet illum recusandae debitis reprehenderit sed?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id cumque asperiores fugit, quis repudiandae accusamus quisquam modi numquam laudantium fugiat enim eum pariatur amet illum recusandae debitis reprehenderit sed?</p>
+          <button class="download-cv">Read more</button>
+        </div>
+      </div>
+      <div class="portfolio">
+        <div class="portfolio-heading">
+          <h2>My Portfolio</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Project Description</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Project Details</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Project Description</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Project Details</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Project Description</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Project Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="contact-section">
+        <div class="contact-heading">
+          <h2>Keep in touch</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+          <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png" alt="">
+          <div class="contact-form">
+            <h4>Send me a message...</h4>
+            <form class="form-group">
+              <input type="text" placeholder="Name" class="input">
+              <input type="email" placeholder="Email" class="input">
+              <textarea name="message" placeholder="Place your message here..."></textarea>
+              <button type="submit" class="btn-submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>John Carter</h2>
+          <h5>Frontend Developer</h5>
+        </div>
+        <div class="sotial-networks">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </footer>
+    </body>
